@@ -74,7 +74,7 @@ export default function App(): React.JSX.Element {
       }
     } catch (err: any) {
       console.error("Fetch Error:", err);
-      setError("There has been an error loading the Coordinated Campaign Leaderboard. Please verify your web connection, or ensure the source spreadsheet is shared publicly.");
+      setError("There has been an error loading the Coordinated Campaign Leaderboard. Please verify your web connection, contact ODP HQ to report an outage.");
     } finally {
       setIsLoading(false);
     }
@@ -307,7 +307,7 @@ export default function App(): React.JSX.Element {
             {/* RUNNER-UP PROGRESS TRACKER */}
             <div className="space-y-4">
               <h3 className="text-[10px] sm:text-xs font-black text-slate-500 tracking-widest uppercase pb-2 border-b-2 border-slate-900 flex flex-row items-center justify-between gap-2">
-                <span className="truncate">Leaderboard</span>
+                <span className="truncate">Data Updated On Mondays</span>
                 <span className="font-mono text-[9px] sm:text-[10px] text-slate-600 bg-amber-100 border border-slate-900 px-2 py-0.5 whitespace-nowrap shrink-0">
                   Data Last Updated: {campaigns[0]?.week_start || "Pending"}
                 </span>
