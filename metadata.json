@@ -1,0 +1,6 @@
+{
+  "name": "OKDems Campaign Leaderboard",
+  "description": "A high-contrast leaderboard tracking voter contact metrics for Oklahoma Democratic campaigns.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
