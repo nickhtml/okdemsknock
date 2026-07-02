@@ -247,7 +247,7 @@ export default function App(): React.JSX.Element {
               >
                 {/* Decorative Top-Left Trim Banner */}
                 <div id="champion-badge" className="absolute top-0 left-0 bg-[#fbc02d] text-slate-950 text-[10px] md:text-xs font-black px-3.5 py-1.5 border-r-2 border-b-2 border-slate-900 uppercase tracking-widest">
-                  Top Campaign This Week
+                  Top Campaign Last Week
                 </div>
                 
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 flex-1">
