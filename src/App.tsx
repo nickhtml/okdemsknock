@@ -183,7 +183,7 @@ export default function App(): React.JSX.Element {
                 DOOR MVPS
               </h1>
               <p className="text-xs md:text-sm text-blue-100 font-bold uppercase tracking-wider mt-1.5">
-                Top Campaign Last Week
+                Top CampaignS of the Last Week
               </p>
             </div>
           </div>
