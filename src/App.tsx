@@ -183,7 +183,7 @@ export default function App(): React.JSX.Element {
                 DOOR MVPS
               </h1>
               <p className="text-xs md:text-sm text-blue-100 font-bold uppercase tracking-wider mt-1.5">
-                Top CampaignS of the Last Week
+                Top CampaignS of the Last 7 Days
               </p>
             </div>
           </div>
@@ -307,7 +307,7 @@ export default function App(): React.JSX.Element {
             {/* RUNNER-UP PROGRESS TRACKER */}
             <div className="space-y-4">
               <h3 className="text-[10px] sm:text-xs font-black text-slate-500 tracking-widest uppercase pb-2 border-b-2 border-slate-900 flex flex-row items-center justify-between gap-2">
-                <span className="truncate">Data Updated On Mondays</span>
+                <span className="truncate">Data Updated Every Morning</span>
                 <span className="font-mono text-[9px] sm:text-[10px] text-slate-600 bg-amber-100 border border-slate-900 px-2 py-0.5 whitespace-nowrap shrink-0">
                   Data Last Updated: {campaigns[0]?.week_start || "Pending"}
                 </span>
