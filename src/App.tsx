@@ -180,10 +180,10 @@ export default function App(): React.JSX.Element {
             />
             <div>
               <h1 className="text-4xl md:text-5xl font-black text-white tracking-tighter uppercase leading-none">
-                TOP KNOCKERS
+                DOOR MVPS
               </h1>
               <p className="text-xs md:text-sm text-blue-100 font-bold uppercase tracking-wider mt-1.5">
-                Coordinated Campaign Leaderboard
+                Top Campaign Last Week
               </p>
             </div>
           </div>
