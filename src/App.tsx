@@ -308,10 +308,6 @@ export default function App(): React.JSX.Element {
             <div className="space-y-4">
               <h3 className="text-[10px] sm:text-xs font-black text-slate-500 tracking-widest uppercase pb-2 border-b-2 border-slate-900 flex flex-row items-center justify-between gap-2">
                 <span className="truncate">Data Updated Every Morning</span>
-                <span className="font-mono text-[9px] sm:text-[10px] text-slate-600 bg-amber-100 border border-slate-900 px-2 py-0.5 whitespace-nowrap shrink-0">
-                  Data Last Updated: {campaigns[0]?.week_start || "Pending"}
-                </span>
-              </h3>
               
               <div id="runners-up-grid" className="flex flex-col gap-3">
                 {runnersUp.length > 0 ? (
