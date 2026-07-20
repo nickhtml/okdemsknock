@@ -5,6 +5,7 @@ import {
   AlertCircle, 
   ExternalLink 
 } from "lucide-react";
+import { Analytics } from '@vercel/analytics/react';
 import MetricToggle from "./components/MetricToggle";
 import CampaignRow, { cleanCampaignData, getCandidateImageUrl } from "./components/CampaignRow";
 // @ts-ignore
@@ -308,6 +309,7 @@ export default function App(): React.JSX.Element {
             <div className="space-y-4">
               <h3 className="text-[10px] sm:text-xs font-black text-slate-500 tracking-widest uppercase pb-2 border-b-2 border-slate-900 flex flex-row items-center justify-between gap-2">
                 <span className="truncate">Data Updated Every Morning</span>
+              </h3>
               
               <div id="runners-up-grid" className="flex flex-col gap-3">
                 {runnersUp.length > 0 ? (
@@ -362,6 +364,7 @@ export default function App(): React.JSX.Element {
           </div>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
