@@ -74,7 +74,7 @@ export default function App(): React.JSX.Element {
       }
     } catch (err: any) {
       console.error("Fetch Error:", err);
-      setError("There has been an error loading the Coordinated Campaign Leaderboard. Please verify your web connection, contact ODP HQ to report an outage.");
+      setError("There has been an error loading the Coordinated Campaign Leaderboard. Please verify your web connection, or ensure the source spreadsheet is shared publicly.");
     } finally {
       setIsLoading(false);
     }
@@ -183,7 +183,7 @@ export default function App(): React.JSX.Element {
                 DOOR MVPS
               </h1>
               <p className="text-xs md:text-sm text-blue-100 font-bold uppercase tracking-wider mt-1.5">
-                Top CampaignS of the Last 7 Days
+                Coordinated Campaign Leaderboard
               </p>
             </div>
           </div>
@@ -247,7 +247,7 @@ export default function App(): React.JSX.Element {
               >
                 {/* Decorative Top-Left Trim Banner */}
                 <div id="champion-badge" className="absolute top-0 left-0 bg-[#fbc02d] text-slate-950 text-[10px] md:text-xs font-black px-3.5 py-1.5 border-r-2 border-b-2 border-slate-900 uppercase tracking-widest">
-                  Top Campaign Last Week
+                  Top Campaign This Week
                 </div>
                 
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 flex-1">
@@ -308,6 +308,7 @@ export default function App(): React.JSX.Element {
             <div className="space-y-4">
               <h3 className="text-[10px] sm:text-xs font-black text-slate-500 tracking-widest uppercase pb-2 border-b-2 border-slate-900 flex flex-row items-center justify-between gap-2">
                 <span className="truncate">Data Updated Every Morning</span>
+              </h3>
               
               <div id="runners-up-grid" className="flex flex-col gap-3">
                 {runnersUp.length > 0 ? (
